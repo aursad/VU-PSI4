@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace PirmaUzduotis
 {
-    class Program
+    public abstract class Salary
     {
-        static void Main(string[] args)
-        {
-        }
+        public Person person;
+
+        public abstract double getSalary();
     }
 }

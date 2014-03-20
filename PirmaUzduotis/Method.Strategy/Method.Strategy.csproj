@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>0708020b-adb4-44ce-8c8a-3d6ef9bcc84e</ProjectGuid>
+    <ProjectGuid>{801F8149-B179-46B8-B995-1DB54ED3E5E8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Method.Strategy</RootNamespace>
@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISalaryCalculator.cs" />
+    <Compile Include="Lithuanian.cs" />
+    <Compile Include="Norway.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrategySalary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PirmaUzduotis\PirmaUzduotis.csproj">
+      <Project>{053bb57f-3e7c-4281-b78b-c7e4188a62ff}</Project>
+      <Name>PirmaUzduotis</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
