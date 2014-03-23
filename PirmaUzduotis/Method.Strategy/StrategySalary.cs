@@ -20,9 +20,13 @@ namespace Method.Strategy
         {
             return this.country.CalculateWithTaxes(person.Salary, person.Married, person.Childs);
         }
-        public double getTaxes()
+        public override double getTaxes()
         {
             return this.country.CalculateTaxes(person.Salary, person.Married, person.Childs);
+        }
+        public override double getSalaryWithTaxes()
+        {
+            return this.country.CalculateToHand(person.Salary, person.Married, person.Childs);
         }
     }
 }

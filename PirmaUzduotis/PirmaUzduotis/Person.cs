@@ -15,9 +15,9 @@ namespace PirmaUzduotis
             get { return _name; }
             set { _name = value; }
         }
-        private int _salary;
+        private double _salary;
 
-        public int Salary
+        public double Salary
         {
             get { return _salary; }
             set { _salary = value; }
@@ -37,7 +37,7 @@ namespace PirmaUzduotis
             set { _childs = value; }
         }
 
-        public Person(string name, int salary, bool married, int childrens)
+        public Person(string name, double salary, bool married, int childrens)
         {
             this.Name = name;
             this.Salary = salary;

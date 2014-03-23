@@ -28,6 +28,12 @@ namespace Method.Template
 
             return result;
         }
+
+        protected override double doGetSalaryWithTaxes(double salary, bool married, int childs)
+        {
+            return Math.Round(salary * 1.182732111);
+        }
+
         private double NPD(double salary)
         {
             if (salary < 1000)

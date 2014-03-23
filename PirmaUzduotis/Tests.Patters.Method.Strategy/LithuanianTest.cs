@@ -50,5 +50,12 @@ namespace Tests.Patters.Method.Strategy
             salary.person = new Person("Aurimas", 2000, true, 2);
             Assert.AreEqual(1596.5, salary.getSalary());
         }
+        [TestMethod]
+        public void Get_Salary_From_Hand_To_Paper()
+        {
+            Salary salary = new StrategySalary(new Lithuanian());
+            salary.person = new Person("Aurimas", 845.5, false, 0);
+            Assert.AreEqual(1000, salary.getSalaryWithTaxes());
+        }
     }
 }

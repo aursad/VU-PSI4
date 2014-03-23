@@ -11,5 +11,7 @@ namespace PirmaUzduotis
         public Person person;
 
         public abstract double getSalary();
+        public abstract double getTaxes();
+        public abstract double getSalaryWithTaxes();
     }
 }

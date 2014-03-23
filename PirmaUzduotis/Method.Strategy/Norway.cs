@@ -43,7 +43,7 @@ namespace Method.Strategy
 
         public double CalculateToHand(double salary, bool married, int childs)
         {
-            throw new NotImplementedException();
+            return Math.Round(salary * 1.5576324);
         }
     }
 }

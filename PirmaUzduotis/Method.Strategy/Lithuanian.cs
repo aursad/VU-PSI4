@@ -33,7 +33,7 @@ namespace Method.Strategy
 
         public double CalculateWithTaxes(double salary, bool married, int childs)
         {
-            return (salary - CalculateTaxes(salary,married,childs));
+            return (salary - CalculateTaxes(salary, married, childs));
         }
 
         public double CalculateTaxes(double salary, bool married, int childs)
@@ -41,14 +41,14 @@ namespace Method.Strategy
             double salaryCount = salary - NPD(salary) - PNDP(married, childs);
             double result = (salaryCount * incomeTaxes) / 100;
             result += (salary * nis) / 100;
-            result += (salary *_pensijuDraudimas) / 100;
+            result += (salary * _pensijuDraudimas) / 100;
 
             return result;
         }
 
         public double CalculateToHand(double salary, bool married, int childs)
         {
-            return 0.00;
+            return Math.Round(salary * 1.182732111);
         }
 
         private double NPD(double salary)
