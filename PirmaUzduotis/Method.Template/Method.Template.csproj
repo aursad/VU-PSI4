@@ -43,9 +43,18 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateLithuania.cs" />
+    <Compile Include="TemplateNorway.cs" />
+    <Compile Include="TemplateSalary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PirmaUzduotis\PirmaUzduotis.csproj">
+      <Project>{053bb57f-3e7c-4281-b78b-c7e4188a62ff}</Project>
+      <Name>PirmaUzduotis</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
