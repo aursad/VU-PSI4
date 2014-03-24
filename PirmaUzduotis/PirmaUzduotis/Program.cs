@@ -10,6 +10,8 @@ namespace PirmaUzduotis
     {
         static void Main(string[] args)
         {
+            // TODO: pridėti dar vieną esybę kuri varijuoja skaičiavimu
+            // TODO: Pakelti abstrakcijos lygi aukščiau
         }
     }
 }
