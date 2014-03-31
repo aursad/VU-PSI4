@@ -53,6 +53,7 @@
     <Compile Include="LithuanianTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NorwayTest.cs" />
+    <Compile Include="ScholarshipTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Method.Strategy\Method.Strategy.csproj">

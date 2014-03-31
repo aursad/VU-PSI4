@@ -11,7 +11,7 @@ namespace Tests.Patters.Method.Template
         [TestMethod]
         public void Template_Method_Get_Lithuanian_Salary_Correct()
         {
-            Salary salary = new TemplateLithuania();
+            Salary salary = new TemplateSalaryLithuania();
             salary.person = new Person("Aurimas Sadauskas", 1000, false, 0);
 
             Assert.AreEqual(845.5, salary.getSalary());
@@ -19,7 +19,7 @@ namespace Tests.Patters.Method.Template
         [TestMethod]
         public void Template_Method_Get_Norway_Salary_Correct()
         {
-            Salary salary = new TemplateNorway();
+            Salary salary = new TemplateSalaryNorway();
             salary.person = new Person("Aurimas", 20000, false, 0);
             Assert.AreEqual(12840, salary.getSalary());
         }

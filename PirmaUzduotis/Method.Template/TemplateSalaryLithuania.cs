@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Method.Template
 {
-    public class TemplateLithuania : TemplateSalary
+    public class TemplateSalaryLithuania : TemplateSalary
     {
         private string _countryCode = "lt-LT";
         private double _nis = 6;

@@ -43,12 +43,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TemplateLithuania.cs" />
-    <Compile Include="TemplateNorway.cs" />
+    <Compile Include="TemplateScholarshipLithuania.cs" />
+    <Compile Include="TemplateSalaryLithuania.cs" />
+    <Compile Include="TemplateSalaryNorway.cs" />
     <Compile Include="TemplateSalary.cs" />
+    <Compile Include="TemplateScholarship.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PirmaUzduotis\PirmaUzduotis.csproj">
