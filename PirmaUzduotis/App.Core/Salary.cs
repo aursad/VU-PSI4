@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PirmaUzduotis
+namespace App.Core
 {
     public abstract class Salary
     {

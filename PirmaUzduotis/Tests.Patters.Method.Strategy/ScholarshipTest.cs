@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Method.Strategy;
-using PirmaUzduotis;
+using App.Core;
 
 namespace Tests.Patters.Method.Strategy
 {
@@ -27,7 +27,7 @@ namespace Tests.Patters.Method.Strategy
         {
             Scholarship salary = new StrategyScholarship(new Lithuanian());
             salary.person = new Person("Aurimas", 325, false, 6);
-            Assert.AreEqual(419.55, salary.getTaxes());
+            Assert.AreEqual(195, salary.getTaxes());
         }
     }
 }

@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\App.Core\App.Core.csproj">
+      <Project>{341b5fe9-5111-489c-aeea-3b815e5ab440}</Project>
+      <Name>App.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Method.Strategy\Method.Strategy.csproj">
       <Project>{801f8149-b179-46b8-b995-1db54ed3e5e8}</Project>
       <Name>Method.Strategy</Name>
@@ -61,10 +65,6 @@
     <ProjectReference Include="..\Method.Template\Method.Template.csproj">
       <Project>{14a80cd0-a3e6-4332-8dcb-7c05b7d929b3}</Project>
       <Name>Method.Template</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PirmaUzduotis\PirmaUzduotis.csproj">
-      <Project>{053bb57f-3e7c-4281-b78b-c7e4188a62ff}</Project>
-      <Name>PirmaUzduotis</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

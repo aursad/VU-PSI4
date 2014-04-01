@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Method.Strategy;
-using PirmaUzduotis;
+using App.Core;
 
 namespace Tests.Patters.Method.Strategy
 {

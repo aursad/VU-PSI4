@@ -1,4 +1,4 @@
-﻿using PirmaUzduotis;
+﻿using App.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,15 +18,20 @@ namespace Method.Strategy
 
         public override double GetScholarship()
         {
-            return (this.person.Salary*this.person.Childs);
+            double result = this.person.Salary * this.person.Childs;
+            return result;
         }
         public override double getTaxes()
         {
-            return this.country.CalculateTaxes(person.Salary*person.Childs, false, 0);
+            double result = this.person.Salary * this.person.Childs;
+            result = (result * this.taxes) + (result * this.nis);
+            return result;
         }
         public override double getSalaryWithTaxes()
         {
-            return this.country.CalculateToHand(person.Salary, person.Married, person.Childs);
+            double result = this.country.CalculateToHand(person.Salary, person.Married, person.Childs);
+            result += (result * this.taxes) + (result * this.nis);
+            return result;
         }
     }
 }

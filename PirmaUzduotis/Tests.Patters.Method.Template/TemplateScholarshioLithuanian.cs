@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PirmaUzduotis;
+using App.Core;
 using Method.Template;
 
 namespace Tests.Patters.Method.Template

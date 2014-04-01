@@ -9,10 +9,10 @@ namespace Method.Template
     public class TemplateScholarshipLithuania : TemplateScholarship
     {
         private string _countryCode = "lt-LT";
-        private double _nis = 6;
-        private double _incomeTaxes = 15;
+        private double _nis = 0;
+        private double _incomeTaxes = 0;
         //Other
-        private int _pensijuDraudimas = 3;
+        private int _pensijuDraudimas = 0;
 
         protected override double doGetBaseSalary(double salary, bool married, int childs)
         {
