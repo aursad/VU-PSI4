@@ -33,6 +33,20 @@ naudoti specifiškai(per rolės interfeisą).
 Problemą išspręskite dviem būdais (du projektai) - panaudodami projektines schemas DEKORATORIUS("Decorator") ir IŠPLĖTIMO OBJEKTAI ("Extension objects"). Aptarkite ir pademonstruokite, kaip tenkinami reikalavimai(pateikite pavyzdžių objektines diagramas).<br/>
 Panagrinėkite ir palyginkite abu variantus.
 
+Trečia užduotis
+=====
+Pasirinkti konkrečią situaciją: 
+<UL>
+<LI>Yra trys susijusios esybių hierarchijos - abstrakcijos ir skirtingai jas realizuojančios klasės.
+<LI>Su kieviena abstrakčia esybe gali būti atliekami bent keli (2-3) polimorfiniai veiksmai - veiklos scenarijai (t.y. veiksmai, kurie atleika su esybe(esybėmis) kažką prasmingo, o ne esybės atributų nuskaitymo/įrašymo veiksmai); su konkrečiomis esybių klasėmis šie veiksmai vyksta skirtingai.
+<LI>Šiuos veikmus, polimorfiškai - neprisirišdamos prie konkrečių esybių klasių, inicijuoja papildomos klientinės klasės arba  pačių esybių klasės (vienas veiklos scenarijus remiasi kitais scenarijais).
+<LI>Pademonstruoti kaip ši situacija modeliuojam dviem būdais (realizuoti du projektus)
+   <UL>
+	<LI>Objektinis stilius: abstrakčiose esybėse įvedami veiklos scenarijus atitinkantys metodai, jie realizuojami poklasiuose.
+	<LI>Duomenų struktūrų/servisų stilius: esybės yra duomenų struktūros, suteikiančios prieigą prie savo būseno, veiklos scenarijus atitinkantys metodai realizuojami atskirose servisų hierarchijose; naudojama "Servisų selektoriaus" schema konkrečioms servisų realizacijoms pagal konkrečią esybę polimorfiškai išrinkti. 
+	</UL>
+<LI>Palyginti abu variantus. Parodyti, kaip kiekviename projekte gali būti pridedamos naujos konkrečios esybių  realizacijos, kaip gali būti pridedami nauji veiksmai su esybėmis.
+</UL>
 
 VU MIF, PSI IV, 2014m. 
 ====
