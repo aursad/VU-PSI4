@@ -16,7 +16,7 @@ namespace App.Core.Decorator.Worker
             this._rooms = 0;
         }
 
-        private int cleanRoom(int rooms)
+        public int cleanRoom(int rooms)
         {
             this._rooms += rooms;
 

@@ -23,5 +23,19 @@ namespace DecoratorTest
             bartender.closeRestaurant();
             Assert.IsFalse(restaurant.Working);
         }
+
+        [TestMethod]
+        public void TestRole()
+        {
+            SimpleWorker simpleWorker = new SimpleWorker("Aurimas", new Restaurant("Test", true));
+            SuperWorker superWorker = new SuperWorker("Petras", new Restaurant("Bo", false));
+
+            IWorker worker = new Bartender(new Cleaner(simpleWorker));
+
+            Assert.AreEqual(10, ((Cleaner)((WorkerDecorator)worker).getRole("App.Core.Decorator.Worker.Cleaner")).cleanRoom(10));
+
+            worker = (WorkerDecorator)((WorkerDecorator)worker).removeRole("App.Core.Decorator.Worker.Bartender");
+            worker.makeDish();
+        }
     }
 }
